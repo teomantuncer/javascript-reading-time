@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Javascript Reading Time</title>
+</head>
+<body>
+<div reading-time>
+	<span reading-time-print></span>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed orci ullamcorper, blandit nulla blandit, porttitor augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce aliquam mattis lorem vitae ornare. Mauris condimentum consequat quam, a mattis est mollis a. Sed ac felis est. Proin eget purus tristique, vestibulum nisi et, volutpat ex. Donec tristique ut massa ut ultricies. Suspendisse potenti. Morbi ipsum nunc, semper in cursus ac, posuere vel massa. Curabitur lobortis lacus leo, vitae pulvinar dolor feugiat sed.</p>
+
+	<p>Sed venenatis in mi quis imperdiet. Donec ut lectus eget tellus suscipit pulvinar. Nulla facilisi. Etiam efficitur quam imperdiet, sagittis nibh eget, vehicula velit. Quisque ut est sed lectus faucibus lacinia a non turpis. Duis justo dui, dictum quis erat in, volutpat egestas felis. Nulla in nunc in mi pulvinar porttitor et a felis. Nunc ac tincidunt risus, sed iaculis risus. Fusce sagittis consequat libero, eget congue lorem aliquet in. Donec ultrices sapien et nisi posuere tempor. Ut molestie molestie auctor. Proin interdum vehicula arcu, in posuere dui suscipit vel. Nulla aliquet dolor porttitor justo iaculis, vel laoreet dolor bibendum.</p>
+
+	<p>Vestibulum vitae dignissim libero. Vivamus eleifend dui mauris, nec mattis ante sagittis sit amet. Mauris diam tellus, gravida ut porta in, pellentesque ac neque. In rutrum commodo urna, et ullamcorper nisl varius vitae. Nullam ac vestibulum massa. Integer porttitor felis vitae augue accumsan mattis. Nunc et tempus elit, id vehicula dolor. Proin eget magna egestas, dapibus dui ut, luctus risus. Donec luctus magna ut tortor feugiat fermentum.</p>
+</div>
+<div reading-time>
+	<span reading-time-print></span>
+	<p>Proin quis erat dapibus, viverra neque ut, varius lorem. Duis sit amet tincidunt nisl, et ornare sapien. Aenean nulla massa, aliquam eget ultrices sit amet, auctor vestibulum lorem. Nullam condimentum elementum diam eget commodo. Nunc fermentum, diam venenatis tempor condimentum, est neque lacinia ipsum, sit amet fermentum augue arcu sit amet ex. Aenean lacinia leo at justo molestie, a auctor urna accumsan. Phasellus id dapibus urna. Nulla fermentum arcu auctor egestas mattis. Nam et gravida augue. Ut iaculis libero sed arcu dignissim, sit amet ultricies justo mollis. Pellentesque dapibus libero ac urna viverra, ut imperdiet eros interdum.</p>
+
+	<p>Vivamus congue velit at urna aliquam, nec viverra magna fringilla. Sed tincidunt congue quam, et volutpat justo aliquam id. In id ipsum nisi. Morbi quis nibh odio. Vivamus tempor quis lorem quis semper. Nulla eget tellus efficitur quam volutpat finibus. Curabitur mauris eros, semper vel diam a, sollicitudin semper justo. Pellentesque ac consequat ex. Cras at lorem sit amet tortor dictum ultrices nec at ipsum. Cras vel feugiat ex, eu luctus sem.</p>
+</div>
+<script src="readingTime.js"></script>
+<script>
+	var strings = document.querySelectorAll('[reading-time]');
+	strings.forEach(function(a){
+		a.querySelector('[reading-time-print]').innerHTML = dataReadingTime(a.innerHTML);
+	});
+</script>
+</body>
+</html>
